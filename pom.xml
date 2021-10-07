@@ -54,19 +54,18 @@
                         </goals>
                     </execution>
                     <execution>
-                        <id>default-check</id>
+                        <id>check</id>
                         <goals>
                             <goal>check</goal>
                         </goals>
                         <configuration>
                             <rules>
                                 <rule>
-                                    <element>BUNDLE</element>
                                     <limits>
                                         <limit>
                                             <counter>BRANCH</counter>
                                             <value>COVEREDRATIO</value>
-                                            <minimum>1.00</minimum>
+                                            <minimum>100%</minimum>
                                         </limit>
                                     </limits>
                                 </rule>
